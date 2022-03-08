@@ -3,30 +3,37 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Title (display)
-title: Japan CSS Support Example Blog
+title: Japan System Center サポート ブログ
 # Sub Title (display)
-subtitle: Japan CSS Support Example Blog
+subtitle: 日本マイクロソフトの System Center に関するサポート情報のブログです。
 # Description
-description: Japan CSS Support Example Blog
+description: 日本マイクロソフトの System Center に関するサポート情報のブログです。お客様より多くお問い合わせいただく内容について掲載を予定しております。
 
 # Keywords
 keywords:
-  - Information
-  - Example
+  - System Center
+  - Operations Manager
+  - Virtual Machine Manager
+  - Orchestrator
+  - Service Manager
 
-author: CSS Japan
+author: Japan System Center Support
 
 # Tag (hexo helper)
 root_tag_generator:
   root_tag_names:
-    - Information
+      - System Center
+      - Operations Manager
+      - Virtual Machine Manager
+      - Orchestrator
+      - Service Manager
   sub_tag_limit: 20
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://cssjpn.github.io/blog/
+url: https://jpsystemcenter.github.io/blog/
 github:
-  url: https://github.com/cssjpn/blog-example/
+  url: https://github.com/jpsystemcenter/blog
   posts_dir: articles
   default_branch: main
 
@@ -41,7 +48,7 @@ skip_render:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:cssjpn/blog-example.git
+  repo: git@github.com:jpsystemcenter/blog.git
   branch: gh-pages
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }} [skip ci]"
 
@@ -72,6 +79,7 @@ render_drafts: false
 post_asset_folder: true
 relative_link: true
 future: true
+highlight:
 highlight:
   enable: true
   line_number: true
