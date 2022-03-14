@@ -42,7 +42,7 @@ skip_render:
   # Bing Webmaster
   - 'BingSiteAuth.xml'
   # Search Console
-  # - 'googlec1234567890abcde.html'
+  - 'googlec1234567890abcde.html'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
