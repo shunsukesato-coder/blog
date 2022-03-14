@@ -28,12 +28,13 @@ root_tag_generator:
       - Orchestrator
       - Service Manager
   sub_tag_limit: 20
+  sub_tag_sort: 'name'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://jpsystemcenter.github.io/blog/
 github:
-  url: https://github.com/jpsystemcenter/blog/
+  url: https://github.com/jpsystemcenter/blog
   posts_dir: articles
   default_branch: main
 
@@ -79,7 +80,6 @@ render_drafts: false
 post_asset_folder: true
 relative_link: true
 future: true
-highlight:
 highlight:
   enable: true
   line_number: true
