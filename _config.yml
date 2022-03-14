@@ -33,16 +33,16 @@ root_tag_generator:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://jpsystemcenter.github.io/blog/
 github:
-  url: https://github.com/jpsystemcenter/blog
+  url: https://github.com/jpsystemcenter/blog/
   posts_dir: articles
   default_branch: main
 
 skip_render:
   - '_data/*.png'
   # Bing Webmaster
-  - 'BingSiteAuth.xml'
+  #- 'BingSiteAuth.xml'
   # Search Console
-  - 'googlec1234567890abcde.html'
+  #- 'googlec1234567890abcde.html'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
