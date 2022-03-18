@@ -28,6 +28,6 @@ System Center に区分される製品は複数存在しますが、本ブログ
 - System Center Orchestrator (SCO, SCORCH)
 - System Center Service Manager (SCSM)
 
-これら以外の System Center 製品、例えば Data Protection Manager (SCDPM) や Configuration Manager (SCOM) は本ブログにて扱う予定はございませんので、予めご了承くださいませ。
+これら以外の System Center 製品、例えば Data Protection Manager (SCDPM) や Configuration Manager (SCCM) は本ブログにて扱う予定はございませんので、予めご了承くださいませ。
 これから様々な情報を発信しますので、こちらのブログが皆さまのお役に立てれば幸いです。
 また、実際のサポート サービスでは、製品動作に関する正式な見解のご提供、そして問題解決のサポートを行っていますので、こちらも併せてよろしくお願いいたします。
