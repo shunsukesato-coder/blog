@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   
   
-  <title>Japan System Center Enterprise Management (SCEM) チームの Blog 新規開設のお知らせ | Japan System Center Support Blog</title>
+  <title>AdtAdmin / setquery でアクセス拒否エラー(0x00000005)が発生する場合の対処法 | Japan System Center Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Blog 新規開設のお知らせこんにちは、System Center Enterprise Management (SCEM) サポート チームです。この度、Japan System Center Enterprise Management (SCEM) サポート チームのブログを新規に開設しましたことをお知らせいたします。 こちらのブログでは、我々のチームで扱う System Center 製品の">
+  <meta name="description" content="皆様こんにちは、System Center サポートチームの 佐藤 です。 本日は System Center Operations Manager（以後 SCOM） の機能である 監査コレクション サービス (ACS) （監査コレクション サービス (ACS) コレクターとデータベースをインストールする方法 | Microsoft Docs）において WQL クエリ設定を実行する際に必要な設定">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Japan System Center Enterprise Management (SCEM) チームの Blog 新規開設のお知らせ">
-<meta property="og:url" content="https://jpsystemcenter.github.io/blog/general/JapanSCEM_000_NewBlogOpened/index.html">
+<meta property="og:title" content="AdtAdmin &#x2F; setquery でアクセス拒否エラー(0x00000005)が発生する場合の対処法">
+<meta property="og:url" content="https://jpsystemcenter.github.io/blog/SCOM/SCOM_AccessError_0x00000005/index.html">
 <meta property="og:site_name" content="Japan System Center Support Blog">
-<meta property="og:description" content="Blog 新規開設のお知らせこんにちは、System Center Enterprise Management (SCEM) サポート チームです。この度、Japan System Center Enterprise Management (SCEM) サポート チームのブログを新規に開設しましたことをお知らせいたします。 こちらのブログでは、我々のチームで扱う System Center 製品の">
+<meta property="og:description" content="皆様こんにちは、System Center サポートチームの 佐藤 です。 本日は System Center Operations Manager（以後 SCOM） の機能である 監査コレクション サービス (ACS) （監査コレクション サービス (ACS) コレクターとデータベースをインストールする方法 | Microsoft Docs）において WQL クエリ設定を実行する際に必要な設定">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-03-18T06:30:00.000Z">
-<meta property="article:modified_time" content="2022-03-28T07:41:19.312Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/71251920/148327138-6c2ba2db-ced8-4408-9c43-144a170ee18d.png">
+<meta property="article:published_time" content="2022-01-06T03:00:00.000Z">
+<meta property="article:modified_time" content="2022-03-28T07:41:19.308Z">
 <meta property="article:author" content="Japan System Center Support">
-<meta property="article:tag" content="General">
-<meta property="article:tag" content="Information">
+<meta property="article:tag" content="SCOM">
+<meta property="article:tag" content="Troubleshoot">
+<meta property="article:tag" content="Audit Collection Service (ACS)">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/71251920/148327138-6c2ba2db-ced8-4408-9c43-144a170ee18d.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan System Center Support Blog" type="application/atom+xml">
   
@@ -80,7 +83,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-general/JapanSCEM_000_NewBlogOpened" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-SCOM/SCOM_AccessError_0x00000005" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -89,7 +92,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Japan System Center Enterprise Management (SCEM) チームの Blog 新規開設のお知らせ
+      AdtAdmin / setquery でアクセス拒否エラー(0x00000005)が発生する場合の対処法
     </h1>
   
 
@@ -97,33 +100,34 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-03-18T06:30:00.000Z" itemprop="datePublished">2022-03-18</time>
+  <time datetime="2022-01-06T03:00:00.000Z" itemprop="datePublished">2022-01-06</time>
 </a>
         
         
-        <a href="https://github.com/jpsystemcenter/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+45867b71-c72e-509f-85b6-c8a28b6c0fd6%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BJapan+System+Center+Enterprise+Management+%28SCEM%29+%E3%83%81%E3%83%BC%E3%83%A0%E3%81%AE+Blog+%E6%96%B0%E8%A6%8F%E9%96%8B%E8%A8%AD%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%5D%28https%3A%2F%2Fjpsystemcenter.github.io%2Fblog%2Fgeneral%2FJapanSCEM_000_NewBlogOpened%2F%29%0A*+Content+Source%3A+%5Barticles%2Fgeneral%2FJapanSCEM_000_NewBlogOpened.md%5D%28https%3A%2F%2Fgithub.com%2Fjpsystemcenter%2Fblob%2Fmain%2Farticles%2Fgeneral%2FJapanSCEM_000_NewBlogOpened.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpsystemcenter/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+bfc046db-a356-50a5-9c1e-6b64a330cd76%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BAdtAdmin+%2F+setquery+%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%8B%92%E5%90%A6%E3%82%A8%E3%83%A9%E3%83%BC%280x00000005%29%E3%81%8C%E7%99%BA%E7%94%9F%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95%5D%28https%3A%2F%2Fjpsystemcenter.github.io%2Fblog%2FSCOM%2FSCOM_AccessError_0x00000005%2F%29%0A*+Content+Source%3A+%5Barticles%2FSCOM%2FSCOM_AccessError_0x00000005.md%5D%28https%3A%2F%2Fgithub.com%2Fjpsystemcenter%2Fblob%2Fmain%2Farticles%2FSCOM%2FSCOM_AccessError_0x00000005.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpsystemcenter.github.io/blog/general/JapanSCEM_000_NewBlogOpened/" data-id="cl1aeiuaj00060pqk2butea8f" class="article-share-link">共有</a>
+        <a data-url="https://jpsystemcenter.github.io/blog/SCOM/SCOM_AccessError_0x00000005/" data-id="cl1aeiuac00020pqkepm12nhe" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Blog-新規開設のお知らせ"><a href="#Blog-新規開設のお知らせ" class="headerlink" title="Blog 新規開設のお知らせ"></a>Blog 新規開設のお知らせ</h2><p>こんにちは、System Center Enterprise Management (SCEM) サポート チームです。<br>この度、Japan System Center Enterprise Management (SCEM) サポート チームのブログを新規に開設しましたことをお知らせいたします。</p>
-<p>こちらのブログでは、我々のチームで扱う System Center 製品のテクノロジーに関する話題を中心に情報を発信していきます。<br>マイクロソフトでは、各製品の動作仕様や、開発部門などからも多くの公式な公開情報を提供しております。<br>このブログでは、新機能に関してのご紹介だけでなく、マイクロソフト製品をご利用のお客様よりサポート依頼を直接受けているサポート エンジニアという立場から、時には私どもの視点を交えて、皆様のお役に立つ情報をご案内したいと思います。<br>これから本ブログで公開していく情報の一例を以下に記載しました。</p>
-<h2 id="公開する情報の例"><a href="#公開する情報の例" class="headerlink" title="公開する情報の例"></a>公開する情報の例</h2><ul>
-<li>リリースされたばかりの新機能に関する情報</li>
-<li>よくサポート チームにお問い合わせいただく “あるある” な問題への対処方法</li>
-<li>System Center 製品をご利用のお客様に是非お伝えしたい情報</li>
-<li>ある問題についてサポートにお問い合わせいただく際、スムーズに調査を進めるために事前に採取いただきたい情報</li>
-</ul>
-<h2 id="本ブログで扱う製品の一覧"><a href="#本ブログで扱う製品の一覧" class="headerlink" title="本ブログで扱う製品の一覧"></a>本ブログで扱う製品の一覧</h2><p>System Center に区分される製品は複数存在しますが、本ブログでは主に下記の製品についてご紹介いたします。</p>
-<ul>
-<li>System Center Operations Manager (SCOM)</li>
-<li>System Center Virtual Machine Manager (SCVMM)</li>
-<li>System Center Orchestrator (SCO, SCORCH)</li>
-<li>System Center Service Manager (SCSM)</li>
-</ul>
-<p>これら以外の System Center 製品、例えば Data Protection Manager (SCDPM) や Configuration Manager (SCCM) は本ブログにて扱う予定はございませんので、予めご了承くださいませ。<br>これから様々な情報を発信しますので、こちらのブログが皆さまのお役に立てれば幸いです。<br>また、実際のサポート サービスでは、製品動作に関する正式な見解のご提供、そして問題解決のサポートを行っていますので、こちらも併せてよろしくお願いいたします。</p>
+        <span id="more"></span>
+<p>皆様こんにちは、System Center サポートチームの 佐藤 です。</p>
+<p>本日は System Center Operations Manager（以後 SCOM） の機能である 監査コレクション サービス (ACS) （<a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/system-center/scom/deploy-install-acs?view=sc-om-2019">監査コレクション サービス (ACS) コレクターとデータベースをインストールする方法 | Microsoft Docs</a>）において WQL クエリ設定を実行する際に必要な設定をご紹介いたします。</p>
+<p>ACS は WQL（<a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/sql/relational-databases/wmi-provider-server-events/using-wql-with-the-wmi-provider-for-server-events?view=sql-server-ver15">WMI Provider for Server Events と WQL の使用 - SQL Server | Microsoft Docs</a>）を使用して取得対象のイベントの範囲を絞ることが可能です。<br>これは ACS データを保存するデータベースの肥大化の防止、また不要なデータを取得しないことでSCOM 管理サーバー/監視対象サーバーの処理負荷の軽減に寄与いたします。</p>
+<p>しかし、規定の設定では下記のように WQL を実行しようとする際にアクセス拒否エラーが出力される事が確認されております。</p>
+<blockquote>
+<p>■コマンド例<br><code> </code> <code>C:\Windows\System32\Security\AdtServer&gt;AdtAdmin /setquery /query:&quot;SELECT * FROM AdtsEvent WHERE EventId=XXX&quot; </code> <code> </code></p>
+</blockquote>
+<p>その際はレジストリエディタにて以下キーに対してユーザー “NETWORK SERVICE” へ フルコントールなどの “値の設定”の権限付与することで改善されます。<br>こちらの設定については SCOM 用に定義されているパラーメータ設定であり、設定変更により他アプリケーションへの影響はございませんのでご安心ください。</p>
+<blockquote>
+<p>■キー<br><code> </code> <code>HKLM\SYSTEM\CurrentControlSet\Services\AdtServer\Parameters</code> <code> </code></p>
+</blockquote>
+<p>参考図：</p>
+<p><img src="https://user-images.githubusercontent.com/71251920/148327138-6c2ba2db-ced8-4408-9c43-144a170ee18d.png" alt="参考図"></p>
+<blockquote>
+<p>対象バージョン：<br>　System Center Operations Manager 2012 R2<br>　System Center Operations Manager 2016<br>　System Center Operations Manager 2019</p>
+</blockquote>
 
       
       
@@ -137,10 +141,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/General/" rel="tag">General</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Information/" rel="tag">Information</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Audit-Collection-Service-ACS/" rel="tag">Audit Collection Service (ACS)</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/SCOM/" rel="tag">SCOM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Troubleshoot/" rel="tag">Troubleshoot</a></li></ul>
 
         
-        <a href="https://github.com/jpsystemcenter/edit/main/articles/general/JapanSCEM_000_NewBlogOpened.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpsystemcenter/edit/main/articles/SCOM/SCOM_AccessError_0x00000005.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -148,11 +152,15 @@
     
 <nav id="article-nav">
   
-  
-    <a href="../Prerequisites_SQL2019/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">一部の System Center 2019 で SQL Server 2019 を使用する際の前提条件</div>
+    <a href="../../SCVMM/SCVMM_Renew_Crtificate/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">次の記事</strong>
+      <div class="article-nav-title">
+        
+          SCVMM サーバーおよび SCVMM 管理対象サーバーの自己署名証明書の更新手順
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -170,19 +178,19 @@
       <ul>
         
           <li>
-            <a href="">Japan System Center Enterprise Management (SCEM) チームの Blog 新規開設のお知らせ</a>
+            <a href="../../general/JapanSCEM_000_NewBlogOpened/">Japan System Center Enterprise Management (SCEM) チームの Blog 新規開設のお知らせ</a>
           </li>
         
           <li>
-            <a href="../Prerequisites_SQL2019/">一部の System Center 2019 で SQL Server 2019 を使用する際の前提条件</a>
+            <a href="../../general/Prerequisites_SQL2019/">一部の System Center 2019 で SQL Server 2019 を使用する際の前提条件</a>
           </li>
         
           <li>
-            <a href="../../SCOM/SCOM_2012R2_Uninstall-TroubleCase/">SCOM 2012 R2 エージェントのアンインストール時のトラブル事例</a>
+            <a href="../SCOM_2012R2_Uninstall-TroubleCase/">SCOM 2012 R2 エージェントのアンインストール時のトラブル事例</a>
           </li>
         
           <li>
-            <a href="../../SCOM/SCOM_agent_failures/">SCOM エージェントの入れ替え作業の失敗事例</a>
+            <a href="../SCOM_agent_failures/">SCOM エージェントの入れ替え作業の失敗事例</a>
           </li>
         
           <li>
