@@ -22,11 +22,11 @@ author: Japan System Center Support
 # Tag (hexo helper)
 root_tag_generator:
   root_tag_names:
-      - System Center
-      - Operations Manager
-      - Virtual Machine Manager
-      - Orchestrator
-      - Service Manager
+      - General
+      - SCOM
+      - SCVMM
+      - SCORCH
+      - SCSM
   sub_tag_limit: 20
   sub_tag_sort: 'name'
 
